@@ -23,7 +23,7 @@ from langchain.agents.agent_toolkits import (
 os.environ['OPENAI_API_KEY'] = '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'
 
 # Create instance of OpenAI LLM
-llm = OpenAI(temperature=0.9, verbose=True)
+llm = OpenAI(temperature=0.1, verbose=True)
 
 # Create and load PDF Loader
 loader =  PyPDFLoader('C:\\GPTBank\\file.pdf')
