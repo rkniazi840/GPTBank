@@ -20,13 +20,13 @@ from langchain.agents.agent_toolkits import (
 
 # Set APIkey for OpenAI Service
 # Can sub this out for other LLM providers
-os.environ['OPENAI_API_KEY'] = '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'
+os.environ['OPENAI_API_KEY'] = ' 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'
 
 # Create instance of OpenAI LLM
 llm = OpenAI(temperature=0.1, verbose=True)
 
 # Create and load PDF Loader
-loader =  PyPDFLoader('C:\\GPTBank\\file.pdf')
+loader =  PyPDFLoader(r"C:\GPTBank\file.pdf")
 # Split pages from pdf 
 pages = loader.load_and_split()
 # Load documents into vector database aka ChromaDB
